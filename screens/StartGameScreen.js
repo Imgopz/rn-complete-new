@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15
     },
     button: {
-        width: 100
+        width: 95
     }
 });
 export default StartGameScreen;
