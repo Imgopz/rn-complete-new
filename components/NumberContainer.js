@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 
 import Colors from '../constants/colors'
 
@@ -12,7 +12,7 @@ const NumberContainer = props => {
 }
 
 const styles = StyleSheet.create({
-    container:{
+    container: {
         borderWidth: 2,
         borderColor: Colors.accent,
         padding: 10,

@@ -6,8 +6,8 @@ const Input = props => {
     return <TextInput {...props} style={{ ...styles.Input, ...props.style }} />;
 }
 
-const  styles = StyleSheet.create({
-    Input:{
+const styles = StyleSheet.create({
+    Input: {
         height: 30,
         borderBottomColor: 'gray',
         borderBottomWidth: 1,
