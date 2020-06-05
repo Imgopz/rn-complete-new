@@ -32,7 +32,7 @@ const StartGameScreen = props => {
     let confimedOutput;
 
     if (confirmed) {
-        confimedOutput = <Input>Chosen Number: {selectedNumber} </Input>
+        confimedOutput = <Text>Chosen Number: {selectedNumber} </Text>
     }
 
     return (
