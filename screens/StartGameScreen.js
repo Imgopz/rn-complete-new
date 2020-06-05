@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, Button, TouchableWithoutFeedback, Keyboard, Ale
 import Card from '../components/Card';
 import Input from '../components/Input';
 import Colors from '../constants/colors';
-import NumberContainer from '../components/NumberContainer'
+import NumberContainer from '../components/NumberContainer';
 
 const StartGameScreen = props => {
     const [enteredValue, setEnteredValue] = useState('');
