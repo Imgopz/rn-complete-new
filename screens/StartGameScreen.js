@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, Button, TouchableWithoutFeedback, Keyboard, Alert } from 'react-native';
+import { AntDesign } from '@expo/vector-icons'
 
 import Card from '../components/Card';
 import Input from '../components/Input';
@@ -66,8 +67,16 @@ const StartGameScreen = props => {
                         value={enteredValue}
                     />
                     <View style={styles.buttonContainer}>
-                        <View style={styles.button}><Button title='Reset' onPress={resetInputHandler} color={Colors.accent} /></View>
-                        <View style={styles.button}><Button title='Confirm' onPress={confirmInputHandler} color={Colors.primary} /></View>
+                        <View style={styles.button}>
+                            <MainButton onPress={resetInputHandler} color={Colors.accent}>
+                                <AntDesign name='reload1' size={25} color='white' />
+                            </MainButton>
+                        </View>
+                        <View style={styles.button}>
+                            <MainButton onPress={confirmInputHandler} color={Colors.primary}>
+                                <AntDesign name='check' size={25} color='white' />
+                            </MainButton>
+                        </View>
                     </View>
                 </Card>
                 {confimedOutput}
